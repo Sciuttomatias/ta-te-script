@@ -85,6 +85,7 @@
 
             borrarJson()
             boton_inicializar.setAttribute("disabled", true)
+
         }
 
         botones.forEach(boton => {
@@ -178,7 +179,7 @@
             }
             
         }
-        
+
         //******************************* comunicacion con json.io
 
         const enviarJugadas = async (jugada) => {
@@ -234,7 +235,6 @@
             jugadas.forEach(element => {
                 eliminarJugada(element.id)
             })
-
         }
         
         const eliminarJugada = async (id) => {
@@ -251,7 +251,7 @@
 
         window.onload = () => {
             nombreJugador = prompt("Ingrese su nombre:")
-
+            
             leerJugadas()
         }
 
